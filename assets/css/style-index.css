@@ -580,7 +580,8 @@ main .novedades .cont-novedades {
 .nov-cont3 .nov3_video-embed {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 */
+    padding-top: 56.25%;
+    /* 16:9 */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3)
@@ -611,4 +612,66 @@ main .novedades .cont-novedades {
 
 .novedad3-logo img {
     width: 100%;
+}
+
+
+/*--------  SEDES  -------*/
+
+.nuestras-sedes {
+    margin-top: 1.8rem;
+    padding: 3rem 2rem;
+    background-color: #f8faff;
+    border-radius: 12px;
+}
+
+.nuestras-sedes>h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #003366;
+}
+
+.nuestras-sedes>p {
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}
+
+.sedes-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 1.5rem;
+    align-items: center;
+}
+
+.sedes-lista {
+    flex: 0 1 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sedes-lista>h4 {
+    font-size: 1.1rem;
+    color: var(--color-principal);
+}
+
+
+.sede>h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.sede p {
+    margin: 0.3rem 0 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.sedes-mapa {
+    flex: 1 1 400px;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 }
