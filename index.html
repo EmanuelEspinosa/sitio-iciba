@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="assets/Imagenes/logo-instituto-icono.ico">
+    <link rel="stylesheet" href="assets/css/style-index.css">
+    <title>ICIBA</title>
 </head>
+
 <body>
-    
+    <header>
+        <section class="logo_header">
+            <img src="assets/Imagenes/logo-instituto.png" alt="Logo Instituto">
+            <h3>I.C.I.B.A</h3>
+        </section>
+
+        <input type="checkbox" id="check" hidden>
+
+        <nav class="navbar">
+            <ul class="nav-ul">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Sobre ICIBA <i class="fas fa-caret-down"></i></a>
+                    <ul class="nav_ul-submenu">
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#sedes">Sedes</a></li>
+                        <li id="sobreNos_nov"><a href="#">Novedades</a></li>
+                        <li><a href="#">Aulas</a></li>
+                        <li><a href="#">Biblioteca</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cursos <i class="fas fa-caret-down"></i></a>
+
+                    <ul class="nav_ul-submenu">
+                        <li><a href="#">Niños</a></li>
+                        <li><a href="#">Adolescentes</a></li>
+                        <li>
+                            <a href="#">Adultos <i class="fas fa-caret-down"></i></a>
+                            <ul class="nav_ul-cursos-adultos">
+                                <li><a href="#">Anual</a></li>
+                                <li><a href="#">Intensivo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mas cursos</a></li>
+                    </ul>
+
+                </li>
+                <li id="nav_ul-nov"><a href="#">Novedades</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li class="nav_ul-li-campus">
+                    <a href="#">Campus<i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <label for="check" class="hamburger-check">
+            <i class="fas fa-bars icon-menu"></i>
+            <i class="fas fa-times icon-close"></i>
+        </label>
+    </header>
 </body>
+
 </html>
