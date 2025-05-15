@@ -799,3 +799,73 @@ footer .iconos_redes {
         transform: rotate(360deg);
     }
 }
+
+/*_____________________________________________________________________*/
+/*                     RESPONSIVE PANTALLAS <= 945PX                   */
+
+
+@media only screen and (max-width: 945px) {
+    header {
+        padding: 7px 10px;
+        flex-direction: column;
+        position: relative;
+    }
+
+    header .logo_header {
+        margin-bottom: .8rem;
+    }
+
+    header .navbar {
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-principal);
+        border-top: 1px solid rgb(7, 95, 182);
+    }
+
+    #nav_ul-nov {
+        display: none;
+    }
+
+    #sobreNos_nov {
+        display: visible;
+    }
+
+    .item1-cont2 .item_cont2-text ul li {
+        display: none;
+    }
+
+    .slider {
+        width: 96vw;
+        aspect-ratio: 16 / 9;
+        max-height: 80vh;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .presentacion .presentacion-video {
+        margin-bottom: 1rem;
+    }
+
+    .video-marco video {
+        width: 100%;
+        height: 300px;
+        border-radius: 12px;
+    }
+
+    #btn_conocenos_desktop {
+        display: none;
+    }
+
+    .presentacion .presentacion-boton {
+        display: block;
+    }
+}
+
