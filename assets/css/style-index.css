@@ -675,3 +675,127 @@ main .novedades .cont-novedades {
     overflow: hidden;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 }
+
+
+/*_____________________________________________________________________*/
+/*                               FOOTER                                */
+
+footer {
+    position: relative;
+    margin-top: 4rem;
+    padding: 3rem 1.5rem 1rem 1.5rem;
+    font-size: 1rem;
+    background-color: var(--color-principal);
+    color: #FFF;
+}
+
+footer .footer-secciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer_card {
+    flex: 1 1 20rem;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.footer-secciones .footer_section1 {
+    flex-direction: column;
+
+}
+
+.footer_section1 .section1-logo {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.footer_section1 .section1-logo>img {
+    width: 10rem;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer_section1 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.datos_footer-section1 a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 0 1rem 0;
+}
+
+.footer-secciones .footer_section2 {
+    justify-content: center;
+}
+
+.footer-secciones .footer_section2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-secciones .footer_section2 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer_section2 ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.footer_section2 ul li a:hover {
+    color: var(--text-light);
+    text-decoration: underline;
+}
+
+footer .iconos_redes {
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2rem;
+    z-index: 10;
+}
+
+.iconos_redes .footer-icono>img {
+    width: 100%;
+    max-width: 5vw;
+    max-height: 5vw;
+    transition: .5s;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+}
+
+.footer-icono>img:hover {
+    scale: 1.3;
+    transition: scale .5s;
+    animation: girar__icono .5s linear;
+}
+
+@keyframes girar__icono {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
