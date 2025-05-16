@@ -190,7 +190,7 @@ header .navbar ul li:hover>ul {
 }
 
 .slider_content-item1 .item1-cont1>h3 {
-    color: var(--color-principal);
+    color: #002447;
     text-align: center;
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -439,6 +439,7 @@ main .novedades {
     background-color: #f7eadac5;
     margin-top: 1rem;
     border-radius: 12px;
+    scroll-margin-top: 80px;
 }
 
 main .novedades h2 {
@@ -622,6 +623,7 @@ main .novedades .cont-novedades {
     padding: 3rem 2rem;
     background-color: #f8faff;
     border-radius: 12px;
+    scroll-margin-top: 80px;
 }
 
 .nuestras-sedes>h2 {
@@ -764,6 +766,39 @@ footer .footer-secciones {
     color: var(--text-light);
     text-decoration: underline;
 }
+
+.footer_section3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer_section3 h3 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    color: #fff;
+}
+
+.footer_section3 p {
+    font-size: 1.05rem;
+    color: #ddd;
+}
+
+.footer-lema {
+    font-style: italic;
+}
+
+.footer-info {
+    color: #bbb;
+    font-size: 0.95rem;
+}
+
+
+footer > hr{
+    margin-bottom: 1.5rem;
+}
+
 
 footer .iconos_redes {
     position: absolute;
@@ -1007,13 +1042,13 @@ footer .iconos_redes {
     }
 
     .item1-cont2 .item_cont2-text>h3 {
-        font-size: 2vw;
-        padding: .8rem 1rem;
+        font-size: .8rem;
+        padding: .7rem .7rem;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
     }
 
     .item1-cont2 .item_cont2-text>h4 {
-        font-size: 2.1vw;
-        margin-bottom: 0;
         display: none;
     }
 
@@ -1022,8 +1057,11 @@ footer .iconos_redes {
     }
 
     .item1-cont2 .item_cont2-text a.btn {
-        padding: 0.7rem .5rem;
-        font-size: 2vw;
+        padding: 1rem 1rem;
+        font-size: .8rem;
+        position: relative;
+        top: -.9rem;
+        left: .8rem;
     }
 
     .buttons {
@@ -1077,6 +1115,7 @@ footer .iconos_redes {
 
     main .novedades {
         padding: 3vw 0vw;
+        scroll-margin-top: 7rem;
     }
 
     main .novedades h2 {
@@ -1116,12 +1155,13 @@ footer .iconos_redes {
         width: 100%;
     }
 
-    .sedes-container {
-        padding: 0;
-    }
-
     .nuestras-sedes {
         padding: 2rem 2rem;
+        scroll-margin-top: 7rem;
+    }
+
+    .sedes-container {
+        padding: 0;
     }
 
     .nuestras-sedes>p {
@@ -1137,12 +1177,16 @@ footer .iconos_redes {
 
     footer .iconos_redes {
         position: absolute;
-        top: -1.5rem;
+        top: -1.4rem;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
         gap: 1rem;
         z-index: 10;
+    }
+
+    footer .footer-secciones {
+        gap: 1.5rem;
     }
 
     footer .iconos_redes .footer-icono>img {
@@ -1157,5 +1201,13 @@ footer .iconos_redes {
         object-fit: cover;
         transition: 0.3s;
     }
-}
 
+    .footer-secciones .footer_section2 {
+        justify-content: flex-start;
+    }
+
+    .footer_section3 {
+        gap: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
