@@ -443,7 +443,7 @@ main .novedades {
 }
 
 main .novedades h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--color-principal);
     margin-bottom: 1rem;
 }
@@ -626,9 +626,9 @@ main .novedades .cont-novedades {
     scroll-margin-top: 80px;
 }
 
-.nuestras-sedes>h2 {
+.nuestras-sedes h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
     color: #003366;
 }
 
@@ -677,6 +677,51 @@ main .novedades .cont-novedades {
     overflow: hidden;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 }
+
+
+.reseñas {
+    margin-top: 1.8rem;
+    background: #d1ebf7;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.reseñas h2 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 2rem;
+}
+
+.reseñas-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.reseña-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 300px;
+    flex: 0 0 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.reseña-text {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.reseña-autor {
+    font-weight: bold;
+    color: #003366;
+}
+
+
 
 
 /*_____________________________________________________________________*/
@@ -1225,5 +1270,16 @@ footer .iconos_redes {
     .footer_section3 {
         gap: 1.2rem;
         margin-bottom: 1rem;
+    }
+
+    .reseñas-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reseñas-container .reseña-card {
+        width: 90%;
+        max-width: none;
+        flex: 1 1 auto;
     }
 }
