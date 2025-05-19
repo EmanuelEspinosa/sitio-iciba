@@ -723,6 +723,25 @@ main .novedades .cont-novedades {
 
 
 
+.seccion-cursos{
+    height: 25vh;
+    padding: 3rem;
+}
+.cursos-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cursos-container {
+  flex: 1 1 60%;
+}
+
+.carrito-container {
+  flex: 1 1 30%;
+}
+
+
 
 /*_____________________________________________________________________*/
 /*                               FOOTER                                */
