@@ -697,17 +697,47 @@ main .novedades .cont-novedades {
     display: flex;
     gap: 2rem;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .reseña-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     background-color: white;
     padding: 1.5rem;
     border-radius: 1rem;
     max-width: 300px;
     flex: 0 0 300px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 14px 12px rgba(0, 0, 0, 0.178);
+
 }
+
+.reseña-card .res_card {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 2px solid #003366
+}
+
+.card-img1 {
+    background-image: url("/assets/Imagenes/reseñas/foto1.jpg");
+    background-size: contain;
+}
+
+.card-img2 {
+    background-image: url("/assets/Imagenes/reseñas/foto2.jpg");
+    background-size: contain;
+    background-position: .3rem 0%;
+}
+
+.card-img3 {
+    background-image: url("/assets/Imagenes/reseñas/foto3.jpg");
+    background-size: contain;
+}
+
 
 .reseña-text {
     font-size: 1rem;
@@ -721,24 +751,34 @@ main .novedades .cont-novedades {
     color: #003366;
 }
 
+.reseña-autor .fa-star {
+    color: rgb(240, 195, 50);
+}
+
+.reseña-autor .star-no {
+    color: #002447;
+}
 
 
-.seccion-cursos{
+
+
+.seccion-cursos {
     height: 25vh;
     padding: 3rem;
 }
+
 .cursos-layout {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .cursos-container {
-  flex: 1 1 60%;
+    flex: 1 1 60%;
 }
 
 .carrito-container {
-  flex: 1 1 30%;
+    flex: 1 1 30%;
 }
 
 
@@ -973,6 +1013,7 @@ footer .iconos_redes {
         padding: 1.5rem 0;
     }
 
+
     footer .iconos_redes .footer-icono>img {
         width: 11vw;
         height: 11vw;
@@ -997,7 +1038,12 @@ footer .iconos_redes {
     }
 
 
+
+
+
 }
+
+
 
 
 /*_____________________________________________________________________*/
