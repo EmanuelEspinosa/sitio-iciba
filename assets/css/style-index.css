@@ -616,6 +616,112 @@ main .novedades .cont-novedades {
 }
 
 
+/*--------  CURSOS  -------*/
+
+.seccion-cursos {
+    width: 96vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    background-image: url("/assets/Imagenes/55392.png");
+}
+
+.seccion-cursos>h2 {
+    margin: auto;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.seccion-cursos .cursos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card_curso {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+.card_curso:hover {
+    transform: scale(1.1);
+}
+
+.card_curso h3 {
+    color: #003366;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.card-curso_img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.card-curso_info p {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.cursos-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+}
+
+.cursos-cta_p {
+    background-image: url("/assets/Imagenes/pergamino.png");
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    aspect-ratio: 16/3.7;
+    color: white;
+    max-width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursos-cta_p p {
+    padding: 4rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-ver-cursos {
+    display: inline-block;
+    background-color: #cc000a;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: auto;
+}
+
+.btn-ver-cursos:hover {
+    background-color: #a80007;
+    transform: scale(1.05);
+}
+
 /*--------  SEDES  -------*/
 
 .nuestras-sedes {
@@ -679,6 +785,8 @@ main .novedades .cont-novedades {
 }
 
 
+/*--------  RESEÑAS  -------*/
+
 .reseñas {
     margin-top: 1.8rem;
     background: #d1ebf7;
@@ -723,21 +831,20 @@ main .novedades .cont-novedades {
 }
 
 .card-img1 {
-    background-image: url("/assets/Imagenes/reseñas/foto1.jpg");
+    background-image: url("/assets/Imagenes/reviews/foto1.jpg");
     background-size: contain;
 }
 
 .card-img2 {
-    background-image: url("/assets/Imagenes/reseñas/foto2.jpg");
+    background-image: url("/assets/Imagenes/reviews/foto2.jpg");
     background-size: contain;
     background-position: .3rem 0%;
 }
 
 .card-img3 {
-    background-image: url("/assets/Imagenes/reseñas/foto3.jpg");
+    background-image: url("/assets/Imagenes/reviews/foto3.jpg");
     background-size: contain;
 }
-
 
 .reseña-text {
     font-size: 1rem;
@@ -758,30 +865,6 @@ main .novedades .cont-novedades {
 .reseña-autor .star-no {
     color: #002447;
 }
-
-
-
-
-.seccion-cursos {
-    height: 25vh;
-    padding: 3rem;
-}
-
-.cursos-layout {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.cursos-container {
-    flex: 1 1 60%;
-}
-
-.carrito-container {
-    flex: 1 1 30%;
-}
-
-
 
 /*_____________________________________________________________________*/
 /*                               FOOTER                                */
@@ -944,6 +1027,7 @@ footer .iconos_redes {
 
 
 @media only screen and (max-width: 945px) {
+
     header {
         padding: 7px 10px;
         flex-direction: column;
@@ -1013,6 +1097,18 @@ footer .iconos_redes {
         padding: 1.5rem 0;
     }
 
+    .cursos-cta_p {
+        width: 60vw;
+        aspect-ratio: 16/4.5;
+    }
+
+    .cursos-cta_p p {
+        padding: 4rem 2rem;
+        text-align: center;
+        font-size: 1.1rem;
+        color: #000;
+        font-weight: bold;
+    }
 
     footer .iconos_redes .footer-icono>img {
         width: 11vw;
@@ -1036,15 +1132,7 @@ footer .iconos_redes {
         gap: 1.5rem;
         z-index: 10;
     }
-
-
-
-
-
 }
-
-
-
 
 /*_____________________________________________________________________*/
 /*                     RESPONSIVE PANTALLAS <= 768PX                   */
@@ -1251,7 +1339,6 @@ footer .iconos_redes {
         margin-top: .5rem;
     }
 
-
     main .novedades .cont-novedades {
         display: flex;
         flex-direction: column;
@@ -1267,7 +1354,6 @@ footer .iconos_redes {
         font-size: 1.2rem;
     }
 
-
     main .novedades .cont-novedades ul,
     div {
         font-size: 1rem;
@@ -1279,6 +1365,23 @@ footer .iconos_redes {
 
     .novedades .cont-novedades .novedad {
         width: 100%;
+    }
+
+    .cursos-cta{
+        gap: 1rem;
+    }
+
+    .cursos-cta_p {
+        width: 83vw;
+        aspect-ratio: 16/7;
+    }
+
+    .cursos-cta_p p {
+        padding: 0 8vw;
+        text-align: center;
+        font-size: 3vw;
+        color: #000;
+        font-weight: bold;
     }
 
     .nuestras-sedes {
@@ -1299,7 +1402,6 @@ footer .iconos_redes {
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
-
 
     footer .iconos_redes {
         position: absolute;
