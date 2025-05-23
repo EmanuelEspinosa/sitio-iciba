@@ -201,7 +201,6 @@ header .navbar ul li:hover>ul {
 
 .slider_content-item1 .item1-cont2 {
     background-color: rgba(0, 91, 187, 0.85);
-    ;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     margin: 2% 1% 2% 0;
     position: relative;
