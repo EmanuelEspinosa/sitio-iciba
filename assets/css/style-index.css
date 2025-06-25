@@ -681,28 +681,6 @@ main .novedades .cont-novedades {
     gap: 1rem;
 }
 
-.cursos-cta_p {
-    background-image: url("/assets/Imagenes/pergamino.png");
-    background-size: cover;
-    background-position: center;
-    width: 50vw;
-    aspect-ratio: 16/3.7;
-    color: white;
-    max-width: 100%;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cursos-cta_p p {
-    padding: 4rem;
-    text-align: center;
-    font-size: 1.3rem;
-    color: #000;
-    font-weight: bold;
-}
-
 .btn-ver-cursos {
     display: inline-block;
     background-color: #cc000a;
@@ -1096,19 +1074,6 @@ footer .iconos_redes {
         padding: 1.5rem 0;
     }
 
-    .cursos-cta_p {
-        width: 60vw;
-        aspect-ratio: 16/4.5;
-    }
-
-    .cursos-cta_p p {
-        padding: 4rem 2rem;
-        text-align: center;
-        font-size: 1.1rem;
-        color: #000;
-        font-weight: bold;
-    }
-
     footer .iconos_redes .footer-icono>img {
         width: 11vw;
         height: 11vw;
@@ -1370,17 +1335,14 @@ footer .iconos_redes {
         gap: 1rem;
     }
 
-    .cursos-cta_p {
-        width: 83vw;
-        aspect-ratio: 16/7;
+    .cursos-cta{
+        width: 90%;
+        margin: auto;
+        padding-bottom: 25px;
     }
 
-    .cursos-cta_p p {
-        padding: 0 8vw;
-        text-align: center;
-        font-size: 3vw;
-        color: #000;
-        font-weight: bold;
+    .cursos-cta img{
+        width: 100%;
     }
 
     .nuestras-sedes {
