@@ -246,6 +246,10 @@ header .navbar ul li:hover>ul {
     font-weight: 800;
 }
 
+#titulo2{
+    display: none;
+}
+
 .item1-cont2 .item_cont2-text>h4 {
     font-size: 1.4vw;
     font-weight: 600;
@@ -286,14 +290,241 @@ header .navbar ul li:hover>ul {
     border-radius: 25px;
     text-decoration: none;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    animation: latido-btn 1.5s infinite;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+@keyframes latido-btn {
+    0% {
+        transform: scale(1);
+        /* Tamaño original */
+    }
+
+    50% {
+        transform: scale(1.09);
+        /* Ligeramente más grande para simular el latido */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Vuelve al tamaño original */
+    }
+}
+
 .item1-cont2 .item_cont2-text a.btn:hover {
+    animation: none;
     background-color: #cc000a;
     transform: scale(1.05);
     color: white;
 }
+
+/*--------  SEGUNDO SLIDE  -------*/
+.slider_content-item2 {
+    background-image: url("/assets/Imagenes/vector-fondo.jpg");
+    overflow: hidden;
+    position: relative;
+
+}
+
+.item2-cont {
+    width: 100%;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.item2-left,
+.item2-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.item2-left {
+    flex: 2;
+}
+
+.item2-left img {
+    width: 110%;
+    border-radius: 10px;
+}
+
+.item2-right {
+    flex-direction: column;
+    align-items: center;
+    flex: 1.3;
+    background-color: #ffffff;
+    height: 93%;
+    position: relative;
+    top: 1rem;
+
+}
+
+.item2-right h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1e2b3c;
+    text-align: center;
+
+}
+
+.item2-right h4 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.item2-right ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.item2-right ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.item2-right ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4b2e83;
+}
+
+.btn-cert {
+    padding: 0.8rem 1.5rem;
+    background-color: #cc000a;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-cert:hover {
+    background-color: #a00008;
+}
+
+/*---- TERCER SLIDE ----*/
+
+.slider_content-item3 {
+    background: url("/assets/Imagenes/fondoBlue.jpg");
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider_content-item3 .item3-cont {
+    display: flex;
+    width: 100%;
+
+}
+
+.item3-img {
+    flex: 1.2;
+    position: relative;
+    border-radius: 12px 0px 0px 12px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.item3-img h3 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #003366;
+}
+
+.item3-img img {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0%;
+    object-fit: cover;
+    filter: brightness(0.95);
+}
+
+
+
+.item3-text {
+    overflow: hidden;
+    background-color: #003366;
+    color: white;
+    padding: 3rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 0px 12px 12px 0px;
+}
+
+/* Brillo */
+.item3-text::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.195), transparent);
+    animation: shimmerDiagonal 4s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+
+.item3-text h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.item3-text p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.item3-text ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.item3-text ul li {
+    margin-bottom: 1rem;
+}
+
+.item3-text ul li::before {
+    content: "\2713";
+    color: rgb(255, 172, 172);
+    margin-right: 0.5rem;
+}
+
+
+@keyframes shimmerDiagonal {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    100% {
+        transform: translate(50%, 50%);
+    }
+
+}
+
+
+
+
+
 
 .buttons {
     position: absolute;
@@ -1044,6 +1275,106 @@ footer .iconos_redes {
         border-radius: 10px;
     }
 
+
+
+
+    .item2-left,
+    .item2-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        position: relative;
+    }
+
+    .item2-left {
+        margin: 1rem 0;
+        flex: 1.8;
+        background-color: #1d2a3fb9;
+    }
+
+    .item2-left img {
+        width: 110%;
+        border-radius: 10px;
+    }
+
+    .item2-right {
+        flex-direction: column;
+        align-items: center;
+        flex: 1.5;
+        background-color: #ffffff;
+    }
+
+    .item2-right h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #1e2b3c;
+        text-align: center;
+
+    }
+
+    .item2-right h4 {
+        font-size: 1.4rem;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+
+    .item2-right ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .item2-right ul li {
+        position: relative;
+        padding-left: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .item2-right ul li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #4b2e83;
+    }
+
+
+
+
+
+
+
+
+
+    .item3-img {
+        flex: 1;
+    }
+
+    .item3-img img {
+        height: 70%;
+    }
+
+    .item3-text {
+        padding: 5rem 2rem;
+        flex: 1;
+    }
+
+    .item3-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .item3-text p {
+        font-size: 1.2rem;
+    }
+
+    .item3-text ul li {
+        margin-bottom: .5rem;
+    }
+
+
+
+
     .presentacion {
         flex-direction: column;
         gap: .5rem;
@@ -1206,40 +1537,98 @@ footer .iconos_redes {
 
     .slider_content-item1 .item1-cont1 {
         display: none;
-        margin: auto;
     }
 
     .slider_content-item1 .item1-cont2 {
         clip-path: none;
+        padding: 0;
     }
 
-    .slider_content-item1 .item1-cont2 h3 {
-        font-size: 4vw;
-        padding: 3vw;
-    }
-
-    .slider_content-item1 .item1-cont2 h4 {
-        font-size: 3vw;
-    }
-
-    .item1-cont2 .item_cont2-text ul li {
-        font-size: 3vw;
-    }
-
-    .item1-cont2 .item_cont2-text h4:nth-child(2) {
+    .slider_content-item1 .item1-cont2 img {
         display: none;
     }
 
-    .item1-cont2 .item_cont2-text a.btn {
-        font-size: 2.5vw;
+    .item1-cont2 .item_cont2-text {
+        width: 100%;
+        position: relative;
+        right: 0;
+        margin: auto;
+        padding: 0 1rem 0 2rem;
+    }
+
+    
+
+    .slider_content-item1 .item1-cont2 h3:first-of-type{
+        display: none;
+        font-size: 1rem;
+        padding: 1.3rem 2rem;
+        
+    }
+
+    #titulo2{
+        display: block;
+        font-size: 1rem;
+        padding: 1.3rem 2rem;
+    }
+
+    .slider_content-item1 .item1-cont2 h4 {
+        display: none;
+
+    }
+
+    .item1-cont2 .item_cont2-text ul li {
+        font-size: 1rem;
     }
 
     .item1-cont2 .item_cont2-text ul li::before {
-        content: "✓";
-        color: #00ffcc;
-        position: absolute;
         left: -.5rem;
-        font-weight: bold;
+    }
+
+    .item1-cont2 .item_cont2-text a.btn {
+        font-size: 1rem;
+    }
+
+    /* SEGUNDO SLIDE */
+
+    .item2-right h3 {
+        font-size: 1.3rem;
+    }
+
+    .item2-right h4 {
+        font-size: 1rem;
+    }
+
+    .item2-right ul {
+        margin-bottom: .5rem;
+    }
+
+    .item2-left {
+        display: none;
+    }
+
+    /*  TERCER SLIDE */
+
+    .item3-img {
+        display: none;
+    }
+
+    .item3-text {
+        padding: 5rem 2rem;
+        flex: 1;
+    }
+
+    .item3-text h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .item3-text p {
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    .item3-text ul li {
+        font-size: 1rem;
     }
 
     .buttons {
@@ -1331,17 +1720,17 @@ footer .iconos_redes {
         width: 100%;
     }
 
-    .cursos-cta{
+    .cursos-cta {
         gap: 1rem;
     }
 
-    .cursos-cta{
+    .cursos-cta {
         width: 90%;
         margin: auto;
         padding-bottom: 25px;
     }
 
-    .cursos-cta img{
+    .cursos-cta img {
         width: 100%;
     }
 
