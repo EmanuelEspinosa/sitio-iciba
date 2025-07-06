@@ -22,7 +22,8 @@ html {
 }
 
 body {
-    background-image: linear-gradient(215deg, rgb(96, 150, 211), rgb(202, 220, 241), rgb(202, 220, 241), rgb(96, 150, 211));
+    background-color: #f4f4f9;
+    /* background-color: #EEEE; */
 }
 
 /*_____________________________________________________________________*/
@@ -126,6 +127,183 @@ header .navbar ul li:hover>ul {
 #sobreNos_nov {
     display: none;
 }
+
+
+
+/*_____________________________________________________________________*/
+/*                               MAIN                                */
+
+main {
+    width: 96vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+main h1 {
+    background-color: #003366;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    padding: .7rem 0 .7rem 0;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+main .cont-intro{
+    background-image: url("/assets/Imagenes/english-language.jpg");
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    border: 2px solid var(--color-principal);
+}
+
+
+.cont-intro .intro{
+    background-color: #024e88f5;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    text-align: justify;
+    max-width: 80%;
+    margin: 1rem auto 1rem auto;
+    line-height: 1.9;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.alerta-inscripcion {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cont-categoria {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-categoria h2 {
+    color: #003366;
+    padding: 1rem 0 .3rem .4rem;
+    border-bottom: 5px solid red;
+    text-align: initial;
+    font-size: 2rem;
+    margin-bottom: .8rem;
+}
+
+.cont-categoria .categoria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.categoria .card-curso {
+    background-color: #ffffff;
+    border: 2px solid #00336630;
+    border-right: 5px solid #f5a623;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    transition: transform 0.3s ease; 
+}
+
+.card-curso:hover {
+  transform: scale(1.02);
+}
+
+.card-curso h3 {
+    text-align: center;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, .3);
+    font-size: 1.5rem;
+    border-bottom: 2px solid #003366;
+    padding-bottom: .5rem;
+}
+
+.card-curso .card-imagen {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-curso .card-imagen img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.card-curso h4 {
+    font-size: 1.1rem;
+    background-color: #eee;
+    padding: .4rem 0 .4rem .4rem;
+    color: #003366;
+}
+
+.card-curso p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.card-curso h5{
+    font-size: 1rem;
+}
+
+.card-curso select,
+.card-curso .horarios-sede {
+  font-size: 1rem;
+  padding: 0.3rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.horarios-sede{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+
+.card-curso .btn-comprarCurso {
+  background-color: #cc000a;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-curso button.btn-comprarCurso:hover {
+  background-color: #a00000;
+}
+
+
+
+
+
+
+
+
+
 
 
 
