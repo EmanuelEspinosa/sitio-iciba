@@ -1,14 +1,3 @@
-const menuToggle = document.getElementById("check");
-const navlinks = document.querySelectorAll(".navbar a");
-
-navlinks.forEach(link => {
-    link.addEventListener('click', () =>{
-        menuToggle.checked = false;
-    });
-});
-
-
-
 const slider = document.querySelector(".slider .slider_content");
 const items = document.querySelectorAll(".slider .slider_content .item");
 const dots = document.querySelectorAll(".slider .dots li");
