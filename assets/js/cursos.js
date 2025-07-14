@@ -8,7 +8,7 @@ let todosLosCursos = [
         nombre: "Nivel Inicial",
         categoria: "Niños",
         duracion: "6 meses",
-        precio: "$25.000",
+        precio: "$115.000",
         modalidad: "pesencial",
         diaHorario: {
             Caballito: ["Martes", "16:00 a 17:30 hs"],
@@ -30,7 +30,7 @@ let todosLosCursos = [
         nombre: "6 a 8 años",
         categoria: "Niños",
         duracion: "10 meses",
-        precio: "$18.000",
+        precio: "$128.000",
         modalidad: "pesencial",
         diaHorario: {
             Caballito: ["Lunes", "17:00 a 18:30 hs"],
@@ -52,7 +52,7 @@ let todosLosCursos = [
         nombre: "9 a 11 años",
         categoria: "Niños",
         duracion: "10 meses",
-        precio: "$18.000",
+        precio: "$180.000",
         modalidad: "pesencial",
         diaHorario: {
             Caballito: ["Jueves", "18:00 a 19:30 hs"],
@@ -74,7 +74,7 @@ let todosLosCursos = [
         nombre: "Inglés general para Adolescentes",
         categoria: "Adolescentes",
         duracion: "10 meses",
-        precio: "$22.000",
+        precio: "$220.000",
         modalidad: "pesencial / virtual",
         diaHorario: {
             Caballito: ["Lunes", "17:30 a 19:30 hs"],
@@ -95,7 +95,7 @@ let todosLosCursos = [
         nombre: "Curso de conversación",
         categoria: "Adolescentes",
         duracion: "4 meses",
-        precio: "$14.000",
+        precio: "$240.000",
         modalidad: "pesencial / virtual",
         diaHorario: {
             Caballito: ["Lunes", "17:00 a 19:00 hs"],
@@ -116,7 +116,7 @@ let todosLosCursos = [
         nombre: "Preparación PET",
         categoria: "Adolescentes",
         duracion: "6 meses",
-        precio: "$24.000",
+        precio: "$250.000",
         modalidad: "pesencial",
         diaHorario: {
             Caballito: ["Martes", "17:30 a 19:30 hs"],
@@ -137,7 +137,7 @@ let todosLosCursos = [
         nombre: "Curso Anual",
         categoria: "Adultos",
         duracion: "12 meses",
-        precio: "$25.000",
+        precio: "$290.000",
         modalidad: "pesencial",
         diaHorario: {
             Caballito: ["Lunes", "17:30 a 19:30 hs"],
@@ -158,7 +158,7 @@ let todosLosCursos = [
         nombre: "Curso Intensivo",
         categoria: "Adultos",
         duracion: "6 meses",
-        precio: "$26.000",
+        precio: "$310.000",
         modalidad: "pesencial / virtual",
         diaHorario: {
             Caballito: ["Lunes y Miércoles", "09:00 a 11:00 hs"],
@@ -179,7 +179,7 @@ let todosLosCursos = [
         nombre: "Inglés para viajes",
         categoria: "Adultos",
         duracion: "3 meses",
-        precio: "$13.500",
+        precio: "$270.500",
         modalidad: "pesencial / virtual",
         diaHorario: {
             Caballito: ["Miércoles", "17:30 a 19:30 hs"],
@@ -200,7 +200,7 @@ let todosLosCursos = [
         nombre: "First Certificate in English (FCE)",
         categoria: "Examenes",
         duracion: "6 meses",
-        precio: "$28.000",
+        precio: "$370.000",
         modalidad: "pesencial",
         diaHorario: {
             Caballito: ["Lunes", "12:00 a 15:00 hs"],
@@ -222,7 +222,7 @@ let todosLosCursos = [
         nombre: "CAE - Certificate in Advanced English",
         categoria: "Examenes",
         duracion: "7 meses",
-        precio: "$30.000",
+        precio: "$390.000",
         modalidad: "pesencial",
         diaHorario: {
             Caballito: ["Jueves", "12:00 a 15:00 hs"],
@@ -244,7 +244,7 @@ let todosLosCursos = [
         nombre: "IELTS Preparation",
         categoria: "Examenes",
         duracion: "3 meses",
-        precio: "$32.000",
+        precio: "$380.000",
         modalidad: "pesencial",
         diaHorario: {
             Caballito: ["Martes", "12:00 a 15:00 hs"],
@@ -265,7 +265,7 @@ let todosLosCursos = [
         nombre: "Inglés Técnico Profesional",
         categoria: "Especiales",
         duracion: "4 meses",
-        precio: "$20.000",
+        precio: "$320.000",
         modalidad: "pesencial / virtual",
         diaHorario: {
             Caballito: ["Martes", "18:00 a 19:30 hs"],
@@ -286,7 +286,7 @@ let todosLosCursos = [
         nombre: "Inglés para Entrevistas Laborales",
         categoria: "Especiales",
         duracion: "2 meses",
-        precio: "$12.000",
+        precio: "$190.000",
         modalidad: "virtual",
         diaHorario: {
             Caballito: ["Martes", "20:00 a 21:00 hs (Via Zoom)"],
@@ -307,7 +307,7 @@ let todosLosCursos = [
         nombre: "Inglés para Hotelería",
         categoria: "Especiales",
         duracion: "4 meses",
-        precio: "$19.000",
+        precio: "$220.000",
         modalidad: "Presencial / Virtual",
         diaHorario: {
             Caballito: ["Lunes", "18:00 a 19:30 hs"],
@@ -331,7 +331,7 @@ const listaLibros = [
         nombre: "English Fun Starters",
         cursoRelacionado: "Nivel Inicial",
         categoria: "Niños",
-        precio: "$8.500",
+        precio: "$18.500",
         imagen: "/assets/Imagenes/cursos/libros/english-fun-starters.jpg",
         descripcion: "Libro ilustrado con juegos, canciones y cuentos cortos para introducir el idioma de forma divertida."
     },
@@ -341,7 +341,7 @@ const listaLibros = [
         nombre: "Little Explorers 1",
         cursoRelacionado: "6 a 8 años",
         categoria: "Niños",
-        precio: "$9.200",
+        precio: "$19.200",
         imagen: "/assets/Imagenes/cursos/libros/little-explorers-1.png",
         descripcion: "Material didáctico con actividades lúdicas y vocabulario básico para primeros lectores."
     },
@@ -351,7 +351,7 @@ const listaLibros = [
         nombre: "Step Up English Kids 2",
         cursoRelacionado: "9 a 11 años",
         categoria: "Niños",
-        precio: "$10.000",
+        precio: "$20.000",
         imagen: "/assets/Imagenes/cursos/libros/step-up-kids.jpg",
         descripcion: "Desarrolla habilidades de lectura y escritura. Incluye actividades de comprensión auditiva y diálogos."
     },
@@ -361,7 +361,7 @@ const listaLibros = [
         nombre: "Teens English Book A",
         cursoRelacionado: "Inglés general para Adolescentes",
         categoria: "Adolescentes",
-        precio: "$11.500",
+        precio: "$21.500",
         imagen: "/assets/Imagenes/cursos/libros/teens-english-a.jpg",
         descripcion: "Diseñado para adolescentes, enfoca en estructuras gramaticales y comunicación cotidiana."
     },
@@ -371,7 +371,7 @@ const listaLibros = [
         nombre: "Let’s Talk – Conversación para Teens",
         cursoRelacionado: "Curso de conversación",
         categoria: "Adolescentes",
-        precio: "$10.800",
+        precio: "$20.800",
         imagen: "/assets/Imagenes/cursos/libros/lets-talk-teens.jpg",
         descripcion: "Libro de práctica oral con situaciones reales, diálogos y debates guiados."
     },
@@ -381,7 +381,7 @@ const listaLibros = [
         nombre: "PET Practice Pack",
         cursoRelacionado: "Preparación PET",
         categoria: "Adolescentes",
-        precio: "$12.000",
+        precio: "$32.000",
         imagen: "/assets/Imagenes/cursos/libros/pet-pack.jpg",
         descripcion: "Simulacros del examen PET de Cambridge. Incluye audios y pruebas corregidas."
     },
@@ -391,7 +391,7 @@ const listaLibros = [
         nombre: "English for Adults – Book 1",
         cursoRelacionado: "Curso Anual",
         categoria: "Adultos",
-        precio: "$13.500",
+        precio: "$33.500",
         imagen: "/assets/Imagenes/cursos/libros/adults-book1.jpg",
         descripcion: "Libro completo con enfoque gradual, gramática, vocabulario y práctica real para adultos."
     },
@@ -401,7 +401,7 @@ const listaLibros = [
         nombre: "Fast Track English",
         cursoRelacionado: "Curso Intensivo",
         categoria: "Adultos",
-        precio: "$13.900",
+        precio: "$23.900",
         imagen: "/assets/Imagenes/cursos/libros/fast-track.jpg",
         descripcion: "Ideal para cursos intensivos. Contenido condensado y ejercicios de progreso rápido."
     },
@@ -411,7 +411,7 @@ const listaLibros = [
         nombre: "Travel English Guide",
         cursoRelacionado: "Inglés para viajes",
         categoria: "Adultos",
-        precio: "$9.800",
+        precio: "$19.800",
         imagen: "/assets/Imagenes/cursos/libros/travel-guide.jpg",
         descripcion: "Libro con frases clave y vocabulario esencial para viajes. Incluye simulacros de situaciones."
     },
@@ -421,7 +421,7 @@ const listaLibros = [
         nombre: "FCE Gold Exam Trainer",
         cursoRelacionado: "First Certificate in English (FCE)",
         categoria: "Examenes",
-        precio: "$14.500",
+        precio: "$54.500",
         imagen: "/assets/Imagenes/cursos/libros/fce-trainer.jpg",
         descripcion: "Manual oficial para preparar el examen B2. Incluye tips, prácticas, exámenes modelo y audio."
     },
@@ -431,7 +431,7 @@ const listaLibros = [
         nombre: "Advanced English Skills",
         cursoRelacionado: "CAE - Certificate in Advanced English",
         categoria: "Examenes",
-        precio: "$15.000",
+        precio: "$65.000",
         imagen: "/assets/Imagenes/cursos/libros/advanced-skills.jpg",
         descripcion: "Material de alto nivel enfocado en producción escrita, comprensión lectora y auditiva avanzada."
     },
@@ -441,7 +441,7 @@ const listaLibros = [
         nombre: "IELTS Booster Pack",
         cursoRelacionado: "IELTS Preparation",
         categoria: "Examenes",
-        precio: "$16.500",
+        precio: "$56.500",
         imagen: "/assets/Imagenes/cursos/libros/ielts-pack.jpg",
         descripcion: "Todo lo necesario para rendir el IELTS. Guías de writing, speaking y tests completos."
     },
@@ -451,7 +451,7 @@ const listaLibros = [
         nombre: "English for Professionals – Tech Edition",
         cursoRelacionado: "Inglés Técnico Profesional",
         categoria: "Especiales",
-        precio: "$14.200",
+        precio: "$44.200",
         imagen: "/assets/Imagenes/cursos/libros/english-tech.jpg",
         descripcion: "Libro enfocado en inglés técnico aplicado a áreas como tecnología, medicina, ingeniería y más."
     },
@@ -461,7 +461,7 @@ const listaLibros = [
         nombre: "Interview Masterclass",
         cursoRelacionado: "Inglés para Entrevistas Laborales",
         categoria: "Especiales",
-        precio: "$10.000",
+        precio: "$20.000",
         imagen: "/assets/Imagenes/cursos/libros/interview-master.jpg",
         descripcion: "Guía práctica para entrevistas en inglés. Estructuras de respuestas, simulaciones y consejos."
     },
@@ -471,7 +471,7 @@ const listaLibros = [
         nombre: "Hospitality & Tourism English",
         cursoRelacionado: "Inglés para Hotelería y Turismo",
         categoria: "Especiales",
-        precio: "$11.800",
+        precio: "$31.800",
         imagen: "/assets/Imagenes/cursos/libros/hospitality-tourism.jpg",
         descripcion: "Libro especializado en vocabulario y situaciones del rubro hotelero, gastronómico y turístico."
     }
