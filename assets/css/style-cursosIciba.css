@@ -198,6 +198,7 @@ main .cont-intro {
     text-align: initial;
     font-size: 2rem;
     margin-bottom: .8rem;
+    scroll-margin-top: 5rem;
 }
 
 .cont-categoria .categoria {
@@ -300,6 +301,7 @@ main .cont-intro {
     color: #003366;
     text-align: center;
     border-radius: 12px;
+    scroll-margin-top: 5rem;
 }
 
 .seccion-libros h2 {

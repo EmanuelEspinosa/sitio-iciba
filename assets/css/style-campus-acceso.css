@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+
+body .cont-pagina {
+    width: 96vw;
+    margin: auto;
+    padding: 1rem;
+}
+
+body .volver-inicio {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.volver-inicio .flecha-volver {
+    width: 40px;
+    height: 40px;
+}
+
+.volver-inicio .flecha-volver img {
+    width: auto;
+    height: 100%;
+}
+
+.volver-inicio h4 a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #003366;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.contenido .acceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.acceso .img-logo {
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.acceso .img-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-acceso {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+.form-acceso input[type="text"],
+.form-acceso input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    color: #333;
+    outline: none;
+}
+
+.form-acceso input[type="text"]::placeholder,
+.form-acceso input[type="password"]::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.form-acceso input[type="text"]:focus,
+.form-acceso input[type="password"]:focus {
+    border-color: #003366;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.form-acceso button {
+    background-color: #003366;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.form-acceso button:hover {
+    background-color: #0056b3;
+}
+
+.acceso h4 {
+    font-size: 0.9em;
+    margin-top: 15px;
+    color: #666;
+}
+
+.acceso h4 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.acceso h4 a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .form-acceso input[type="text"],
+    .form-acceso input[type="password"] {
+        font-size: .76rem;
+    }
+
+    .form-acceso button {
+        font-size: 1rem;
+    }
+
+    .acceso h4 {
+        width: 100%;
+        text-align: center;
+    }
+}
