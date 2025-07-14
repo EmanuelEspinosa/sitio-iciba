@@ -618,12 +618,8 @@ listaLibros.forEach(libro => {
     <a href="#carrito">Agregar al carrito</a>    
     </button>
   `;
-
     contenedorLibros.appendChild(card);
 });
-
-
-// let carrito = [];
 
 
 function agregarAlCarrito(id, tipo, sedeSeleccionada) {
@@ -690,6 +686,7 @@ function renderizarCarrito() {
 
 
     btnVaciar.style.backgroundColor = "#cc000a";
+    btnVaciar.style.cursor = "pointer";
 
     carrito.forEach(producto => {
 
@@ -783,6 +780,10 @@ document.getElementById("lista-carrito").addEventListener("click", (e) => {
     if (e.target.classList.contains("btn-eliminar")) {
         const index = carrito.indexOf(producto);
         carrito.splice(index, 1);
+        if(carrito.length === 0){
+            btnVaciar.style.backgroundColor = "#888";
+            btnVaciar.style.cursor = "default";
+        }
     }
     localStorage.setItem("carrito", JSON.stringify(carrito));
     renderizarCarrito();
@@ -796,6 +797,7 @@ btnVaciar.addEventListener("click", () => {
         const confirmacion = confirm("¿Estás seguro de que deseas vaciar el carrito?");
         if (confirmacion) {
             btnVaciar.style.backgroundColor = "#888";
+            btnVaciar.style.cursor = "default";
             carrito = [];
             localStorage.removeItem("carrito");
             renderizarCarrito();
