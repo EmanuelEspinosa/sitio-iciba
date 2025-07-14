@@ -50,7 +50,7 @@
                 <li id="nav_ul-nov"><a href="#novedades">Novedades</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li class="nav_ul-li-campus">
-                    <a href="#">Campus<i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+                    <a href="campus.html">Campus<i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
                 </li>
             </ul>
         </nav>
@@ -77,11 +77,112 @@
         </div>
 
         </div>
-        <div class="alerta-inscripcion animacion-pulso">
+        <div class="alerta-inscripcion" id="alerta-inscripcion">
             ⚠️ La inscripción para los cursos 2025 está abierta hasta el <strong>15 de marzo de 2025</strong>. ¡No te
             quedes sin tu lugar!
         </div>
         <section id="contenedor-cursos" class="seccion-cursos"></section>
+
+
+        <section class="seccion-libros">
+            <h2>Nuestros Libros Recomendados</h2>
+            <div class="contenedor-libros" id="contenedor-libros"></div>
+        </section>
+
+        <section class="seccion-carrito" id="carrito">
+            <div class="contenedor-carrito">
+                <div class="titulo-seccionCarrito">
+                    <div class="imagen-carrito">
+                        <img src="/assets/Imagenes/carrito.png" alt="">
+                    </div>
+                    <h2>Mi Carrito</h2>
+                </div>
+
+                <div class="lista-carrito" id="lista-carrito">
+                    <div class="productos-carrito" id="productos-carrito">
+                        <p class="p-carritoVacio">Aún no ha agregado ningún producto al carrito</p>
+                    </div>
+                    <div class="total-carrito" id="total-carrito"></div>
+                </div>
+                <button id="btn-vaciar-carrito">Vaciar Carrito</button>
+                <div class="medios-pago">
+                    <h3>Medios de pago</h3>
+                    <div class="cont-mediosDePago">
+                        <div class="card-medioDePago">
+                            <img src="/assets/Imagenes/MediosPago/AmericanExpress.png" alt="">
+                        </div>
+                        <div class="card-medioDePago">
+                            <img src="/assets/Imagenes/MediosPago/Visa.jpg" alt="">
+                        </div>
+                        <div class="card-medioDePago">
+                            <img src="/assets/Imagenes/MediosPago/MasterCard.jpg" alt="">
+                        </div>
+                        <div class="card-medioDePago">
+                            <img src="/assets/Imagenes/MediosPago/Cabal.png" alt="">
+                        </div>
+                        <div class="card-medioDePago">
+                            <img src="/assets/Imagenes/MediosPago/NaranjaX.jpg" alt="">
+                        </div>
+                        <div class="card-medioDePago">
+                            <img src="/assets/Imagenes/MediosPago/MercadoPago.png" alt="">
+                        </div>
+                        <div class="card-medioDePago">
+                            <img src="/assets/Imagenes/MediosPago/efectivo.png" alt="">
+                        </div>
+                        <div class="card-medioDePago">
+                            <img src="/assets/Imagenes/MediosPago/modo.png" alt="">
+                        </div>
+                        <div class="card-medioDePago">
+                            <img src="/assets/Imagenes/MediosPago/rapipago.jpg" alt="">
+                        </div>
+                        <div class="card-medioDePago">
+                            <img src="/assets/Imagenes/MediosPago/pago-facil.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- <div class="lista-carrito" id="lista-carrito">
+            <div class="productos-carrito" id="productos-carrito">
+                <p>Aún no ha agregado ningún producto al carrito</p>
+                <div class="item-carrito">
+
+                    <div class="cont-item nomb-producto">
+                        <h4>${producto.clasificacion} </h4>
+                        <h5>${producto.nombre}</h5>
+                    </div>
+
+                    <div class="cont-item">
+                        <button class="btn-mas" data-id="${producto.id}"
+                            data-tipo="${producto.clasificacion}">➕
+                        </button>
+
+                        <p>${producto.cantidad}</p>
+
+                        <button class="btn-menos" data-id="${producto.id}"
+                            data-tipo="${producto.clasificacion}">➖
+                        </button>
+                    </div>
+
+                    <div class="cont-item">
+                        <p>Precio: ${producto.precio}</p>
+                    </div>
+
+                    <button class="btn-eliminar" data-id="${producto.id}"
+                        data-tipo="${producto.clasificacion}">❌
+                    </button>
+
+                </div>
+
+                ... se repite el mismo div
+            </div>
+            <div class="total-carrito" id="total-carrito"></div>
+        </div>
+        <button id="btn-vaciar-carrito">Vaciar Carrito</button> -->
+
+
     </main>
 
 
