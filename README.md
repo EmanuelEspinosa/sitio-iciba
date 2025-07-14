@@ -4,6 +4,10 @@ Este proyecto es una simulación del sitio web institucional del Instituto de Cu
 
 El sitio fue desarrollado con HTML5, CSS3 y JavaScript, con un enfoque en diseño responsive, accesibilidad y experiencia de usuario. Fue creado sin frameworks externos, lo que permitió aplicar conocimientos fundamentales de maquetado y estilos personalizados.
 
+## Sitio en línea
+
+Sitio web publicado: https://iciba.netlify.app
+
 ## Funcionalidades principales
 
 - **Slider de inicio** con mensajes institucionales
